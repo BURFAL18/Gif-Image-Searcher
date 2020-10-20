@@ -2,21 +2,28 @@ import React from "react";
 import SearchBar from "./SearchBar";
 import Background from "../images/Mountains.jpg";
 
-var style = {
+var jumbotronStyle = {
   backgroundImage: `url(${Background})`,
   backgroundSize: "cover",
+  backgroundPositionY: "-300px",
 };
 
-const Jumbotron = () => {
+var textStyle = {
+  color: "white",
+};
+
+const Jumbotron =() => {
   return (
-    <section className="jumbotron text-center">
-      <div className="container" style={style}>
-        <h1>What do you want to search?</h1>
+    <section className="jumbotron text-center" style={jumbotronStyle}>
+      <div className="container">
+        <h1 className="font-weight-bold" style={textStyle}>
+          What do you want to search?
+        </h1>
         <p>
           <a className="btn btn-primary my-2">Images</a>
           <a className="btn btn-secondary my-2">Gifs</a>
         </p>
-        <SearchBar />
+        <SearchBar/>
       </div>
     </section>
   );

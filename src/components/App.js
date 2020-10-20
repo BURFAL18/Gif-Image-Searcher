@@ -1,14 +1,23 @@
 import React from "react";
-import Header from "./Header";
 import Jumbotron from "./Jumbotron";
 
-const App = () => {
+class App extends React.Component
+{
+   onSearchSubmit(term)
+   {  
+    console.log(term);
+   }
+
+render()
+{
   return (
     <div>
-      <Header />
-      <Jumbotron />
+      <Jumbotron/> 
     </div>
   );
+}
 };
-
 export default App;
+
+
+
