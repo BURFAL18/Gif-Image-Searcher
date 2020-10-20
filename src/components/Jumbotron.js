@@ -1,4 +1,4 @@
-  
+
 import React from "react";
 import SearchBar from "./SearchBar";
 import Background from "../images/Mountains.jpg";
@@ -6,7 +6,12 @@ import Background from "../images/Mountains.jpg";
 var jumbotronStyle = {
   backgroundImage: `url(${Background})`,
   backgroundSize: "cover",
-  backgroundPositionY: "-300px",
+  backgroundPosition: "fixed",
+  backgroundRepeat: "no-repeat",
+  width: "100%",
+  position: "absolute",
+  top: 0,
+  left: 0,
 };
 
 var textStyle = {
@@ -25,7 +30,7 @@ class Jumbotron extends React.Component {
           </h1>
           <p>
             <a
-              className="btn btn-primary my-2"
+              className="btn btn-primary my-2 "
               onClick={() => this.setState({ searchType: "IMAGES" })}
             >
               Images

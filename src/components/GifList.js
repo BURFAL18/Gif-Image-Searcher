@@ -1,20 +1,24 @@
 import React from "react";
 import GifPlayer from "react-gif-player";
+import "./ImageList.css";
 
 const GifList = (props) => {
-  var gifs = props.results.map((result) => {
+  const gifs = props.results.map((result) => {
     return (
-      <div key={result.id}>
-        <GifPlayer
-          gif={result.media[0].gif.url}
-          still={result.media[0].gif.preview}
-        />
-        {console.log(result.media[0].tinygif.preview)}
-      </div>
+      <li className="image-grid__item" key={result.id}>
+        <a className="grid-item">
+          <div className="grid-item__image" key={result.id}>
+            <GifPlayer
+              gif={result.media[0].tinygif.url}
+              still={result.media[0].tinygif.preview}
+            />
+          </div>
+        </a>
+      </li>
     );
   });
 
-  return <div>{gifs}</div>;
+  return <ul className="image-grid">{gifs}</ul>;
 };
 
 export default GifList;

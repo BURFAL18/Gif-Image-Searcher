@@ -1,15 +1,21 @@
 import React from "react";
+import "./css/ImageList.css";
 
 const ImageList = (props) => {
-  const images = props.results.map(({ description, id, urls }) => {
+  const images = props.results.map((result) => {
     return (
-      <div key={id}>
-        <img alt={description} src={urls.regular}></img>;
-      </div>
+      <li className="image-grid__item" key={result.id}>
+        <a className="grid-item">
+          <div
+            className="grid-item__image"
+            style={{ backgroundImage: `url(${result.largeImageURL})` }}
+          ></div>
+        </a>
+      </li>
     );
   });
 
-  return <div>{images}</div>;
+  return <ul className="image-grid">{images}</ul>;
 };
 
 export default ImageList;
