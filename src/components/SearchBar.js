@@ -1,19 +1,20 @@
 import React from "react";
 
 class SearchBar extends React.Component {
-  state = {term :''};
-  
-  onSubmitForm = (event) =>
-  {
-      event.preventDefault();
-      this.props.onSubmit(this.state.term);
-  }
+  state = {
+    term: "",
+  };
+
+  onFormSubmit = (event) => {
+    event.preventDefault();
+    console.log(this.state.term, this.props.searchType);
+    this.props.onSubmit(this.state.term, this.props.searchType);
+  };
 
   render() {
     return (
-
       <div className="d-flex container mt-4">
-        <form className="input-group" onSubmit={(event)=>this.onSubmitForm(event)}>
+        <form className="input-group" onSubmit={this.onFormSubmit}>
           <input
             type="text"
             className="form-control"
@@ -29,7 +30,6 @@ class SearchBar extends React.Component {
           </button>
         </form>
       </div>
-      
     );
   }
 }

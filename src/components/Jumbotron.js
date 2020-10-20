@@ -1,3 +1,4 @@
+  
 import React from "react";
 import SearchBar from "./SearchBar";
 import Background from "../images/Mountains.jpg";
@@ -12,21 +13,38 @@ var textStyle = {
   color: "white",
 };
 
-const Jumbotron =() => {
-  return (
-    <section className="jumbotron text-center" style={jumbotronStyle}>
-      <div className="container">
-        <h1 className="font-weight-bold" style={textStyle}>
-          What do you want to search?
-        </h1>
-        <p>
-          <a className="btn btn-primary my-2">Images</a>
-          <a className="btn btn-secondary my-2">Gifs</a>
-        </p>
-        <SearchBar/>
-      </div>
-    </section>
-  );
-};
+class Jumbotron extends React.Component {
+  state = { searchType: "IMAGES" };
+
+  render() {
+    return (
+      <section className="jumbotron text-center" style={jumbotronStyle}>
+        <div className="container">
+          <h1 className="font-weight-bold" style={textStyle}>
+            What do you want to search?
+          </h1>
+          <p>
+            <a
+              className="btn btn-primary my-2"
+              onClick={() => this.setState({ searchType: "IMAGES" })}
+            >
+              Images
+            </a>
+            <a
+              className="btn btn-secondary my-2"
+              onClick={() => this.setState({ searchType: "GIFS" })}
+            >
+              Gifs
+            </a>
+          </p>
+          <SearchBar
+            onSubmit={this.props.onSubmit}
+            searchType={this.state.searchType}
+          />
+        </div>
+      </section>
+    );
+  }
+}
 
 export default Jumbotron;
