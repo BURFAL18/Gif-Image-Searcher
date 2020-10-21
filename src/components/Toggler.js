@@ -1,10 +1,10 @@
 import React from 'react';
+
 import { func, string } from 'prop-types';
-import styled from "styled-components" ;
 
-
-const Button = styled.button
-`  background: ${({ theme }) => theme.background};
+import styled from "styled-components"
+const Button = styled.button`
+  background: ${({ theme }) => theme.background};
   border: 2px solid ${({ theme }) => theme.toggleBorder};
   color: ${({ theme }) => theme.text};
   border-radius: 30px;
@@ -21,6 +21,7 @@ const Toggle = ({theme,  toggleTheme }) => {
         </Button>
     );
 };
+
 Toggle.propTypes = {
     theme: string.isRequired,
     toggleTheme: func.isRequired,

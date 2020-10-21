@@ -13,7 +13,7 @@ import {GlobalStyles } from "./GlobalStyles";
 import { lightTheme, darkTheme } from "./Themes";
 
 class App extends React.Component {
-  state = { results: [], type: "IMAGES", theme:"light"};
+  state = { results: [], type: "IMAGES", theme: "light" };
 
    //DARK MODE
    themeToggler = () => {
@@ -27,16 +27,17 @@ class App extends React.Component {
         params: {
           key: "18789879-231187672e9da4d0fc075ff91",
           q: term,
-          per_page: 80,
+          per_page:101,
         },
       });
+      
       this.setState({ results: response.data.hits, type: searchType });
     } else {
       response = await tenor.get("/search", {
         params: {
           key: "MDCWA8LM91BG",
           q: term,
-          media_filter: "basic",
+          
         },
       });
       this.setState({ results: response.data.results, type: searchType });
