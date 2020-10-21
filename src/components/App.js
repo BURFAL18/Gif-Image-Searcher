@@ -1,15 +1,24 @@
 import React from "react";
+
 import pixabay from "../apis/pixabay";
 import tenor from "../apis/tenor";
 
 
 import ImageList from "./ImageList";
 import GifList from "./GifList";
+import Jumbotron from "./Jumbotron";
+
+import{ThemeProvider} from "styled-components";
+import {GlobalStyles } from "./GlobalStyles";
+import { lightTheme, darkTheme } from "./Themes";
 
 class App extends React.Component {
-  state = { results: [], type: "IMAGES"};
+  state = { results: [], type: "IMAGES", theme:"light"};
 
- 
+   //DARK MODE
+   themeToggler = () => {
+    this.state.theme === "light"? this.setState({ theme: "dark" }): this.setState({ theme: "light" });
+  };
 
   onSearchSubmit = async (term, searchType = "IMAGES") => {
     var response = [];
@@ -52,14 +61,20 @@ class App extends React.Component {
 
   render() {
     return (
-           <div>
+      <ThemeProvider
+        theme={this.state.theme === "light" ? lightTheme : darkTheme}
+      >
+        <>
+          <GlobalStyles />
+          <div>
             <Jumbotron
               onSubmit={this.onSearchSubmit}
               themeToggler={this.themeToggler}
             />
             {this.renderContent()}
           </div>
-      
+        </>
+      </ThemeProvider>
     );
   }
 }

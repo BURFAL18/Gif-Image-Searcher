@@ -3,11 +3,19 @@
   padding-bottom: 3rem;
   margin-bottom: 0;
   background-color: #fff;
+
+  background-size: cover;
+
+  background-repeat:no-repeat;
+  background-position:fixed;
+
+  
 }
 @media (min-width: 768px) {
   .jumbotron {
     padding-top: 6rem;
     padding-bottom: 6rem;
+
   }
 }
 
@@ -20,7 +28,7 @@
 }
 
 .jumbotron .container {
-  max-width: 40rem;
+  max-width: auto-fill;
 }
 
 footer {

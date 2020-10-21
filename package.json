@@ -10,7 +10,8 @@
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-gif-player": "^0.4.2",
-    "react-scripts": "^3.4.4"
+    "react-scripts": "^3.4.4",
+    "styled-components": "^5.2.0"
   },
   "scripts": {
     "start": "react-scripts start",

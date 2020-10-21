@@ -1,5 +1,5 @@
-import React from "react";
-import "./css/ImageList.css";
+import React from "react" ;
+import "./ImageList.css";
 
 const ImageList = (props) => {
   const images = props.results.map((result) => {
