@@ -5,7 +5,7 @@ PoweredBy :
 ![Author](https://img.shields.io/badge/author-Brijesh%20Burfal-lightgrey.svg?colorB=9900cc&style=flat-square)
 
 
-GIS is a React app which fetches Images from Unsplash API and Gifs from Tenor API.
+GIS is a React app which fetches Images from Pixabay API and Gifs from Tenor API.
 
   - Simple and Minimal UI
 
@@ -23,6 +23,7 @@ GIS is a React app which fetches Images from Unsplash API and Gifs from Tenor AP
 ![gifimageappss1](https://user-images.githubusercontent.com/56060354/97353532-2ba2b800-18ba-11eb-93b1-0d18c3ef7a93.png)
 
 ### API 
+* [Pixabay]-  Over 1.8 million+ high quality stock images and videos.
 * [Unsplash] - largest open collection of high-quality photos.
 * [Tenor] - most relevant GIF search in over 35 languages worldwide.
 
@@ -43,7 +44,7 @@ GIS uses a number of open source projects to work properly:
 
 
 
-
+   [Pixabay]: <https://pixabay.com/api/docs/>
    [git-repo-url]: <https://github.com/BURFAL18/Gif-Image-Searcher>
    [node.js]: <http://nodejs.org>
    [ReactJs]: <http://reactjs.org>
