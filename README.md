@@ -17,9 +17,6 @@ GIS is a React app which fetches Images from Pixabay API and Gifs from Tenor API
 
 # Preview
 ## Image Search
-![searchapple](https://user-images.githubusercontent.com/56060354/97354589-a28c8080-18bb-11eb-8951-517f4a54fde9.png)
-
-## Full Screen
 ![gifimageappss1](https://user-images.githubusercontent.com/56060354/97353532-2ba2b800-18ba-11eb-93b1-0d18c3ef7a93.png)
 
 ### API 
