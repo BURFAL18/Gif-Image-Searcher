@@ -3,6 +3,7 @@ PoweredBy :
 ![ReactJs](https://user-images.githubusercontent.com/56060354/97405855-53c40280-191e-11eb-8fe5-8d7878b0b280.png)
 
 ![Author](https://img.shields.io/badge/author-Brijesh%20Burfal-lightgrey.svg?colorB=9900cc&style=flat-square)
+![Author](https://img.shields.io/badge/author-Pratyush%20Kumar-lightgrey.svg?colorB=9900cc&style=flat-square)
 
 
 GIS is a React app which fetches Images from Pixabay API and Gifs from Tenor API.
