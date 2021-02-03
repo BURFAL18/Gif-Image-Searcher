@@ -1,9 +1,7 @@
 # GIS (Gifs-Image-Search engine)
 PoweredBy :
 ![ReactJs](https://user-images.githubusercontent.com/56060354/97405855-53c40280-191e-11eb-8fe5-8d7878b0b280.png)
-
 ![Author](https://img.shields.io/badge/author-Brijesh%20Burfal-lightgrey.svg?colorB=9900cc&style=flat-square)
-![Author](https://img.shields.io/badge/author-Pratyush%20Kumar-lightgrey.svg?colorB=9900cc&style=flat-square)
 
 
 GIS is a React app which fetches Images from Pixabay API and Gifs from Tenor API.
@@ -13,12 +11,13 @@ GIS is a React app which fetches Images from Pixabay API and Gifs from Tenor API
 # New Features!
 
   - DarkMode 
- 
 ![darkm](https://user-images.githubusercontent.com/56060354/97354945-33635c00-18bc-11eb-8bfe-1025add74d9e.gif)
 
-# Preview
+# COMPLETE Preview
+![GIS_PR](https://user-images.githubusercontent.com/56060354/106734534-22ec1b80-6639-11eb-8340-6da927b23f1f.gif)
+
 ## Image Search
-![gifimageappss1](https://user-images.githubusercontent.com/56060354/97353532-2ba2b800-18ba-11eb-93b1-0d18c3ef7a93.png)
+![Home](https://user-images.githubusercontent.com/56060354/106734559-2b445680-6639-11eb-99c8-de143d97187d.png)
 
 ### API 
 * [Pixabay]-  Over 1.8 million+ high quality stock images and videos.
@@ -33,12 +32,6 @@ GIS uses a number of open source projects to work properly:
 * [Bootstrap] - great UI boilerplate for modern web apps
 * [node.js] - evented I/O for the backend
 
-
-
-
-
-
- 
 
 
 
