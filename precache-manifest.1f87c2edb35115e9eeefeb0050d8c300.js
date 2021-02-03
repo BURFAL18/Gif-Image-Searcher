@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4fd6ef1abbdd3402bcc6dbe17e7bb9eb",
+    "revision": "e57a1aecf24a7aa918e85a014f57ae66",
     "url": "/Gif-Image-Searcher/index.html"
   },
   {
-    "revision": "ad439811b8f04271011e",
+    "revision": "64dd0bad8b91edc3a2ee",
     "url": "/Gif-Image-Searcher/static/css/main.c03ab405.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Gif-Image-Searcher/static/js/2.5791b15f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ad439811b8f04271011e",
-    "url": "/Gif-Image-Searcher/static/js/main.ba73753a.chunk.js"
+    "revision": "64dd0bad8b91edc3a2ee",
+    "url": "/Gif-Image-Searcher/static/js/main.31b76bcf.chunk.js"
   },
   {
     "revision": "ddf91e31e8a321370e75",
