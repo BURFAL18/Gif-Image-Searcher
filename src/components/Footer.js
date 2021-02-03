@@ -5,17 +5,17 @@ const Footer = () => {
     <>
       <footer className="text-center">
         <div className="icon">
-          <a href="https://www.linkedin.com/company/refier/">
-            <i className="fab fa-linkedin fa-2x mx-3  " />
+          <a href="https://www.linkedin.com/in/brijesh-burfal/">
+            <i className="fab fa-linkedin fa-3x mx-3  " />
           </a>
-          <a href="https://www.facebook.com/RefierExperts/">
-            <i className="fab fa-facebook fa-2x mx-3" />
+          <a href="https://www.facebook.com//">
+            <i className="fab fa-facebook fa-3x mx-3" />
           </a>
-          <a href="https://twitter.com/RefierExperts">
-            <i className="fab fa-twitter fa-2x mx-3" />
+          <a href="https://twitter.com/BrijeshBurfal">
+            <i className="fab fa-twitter fa-3x mx-3" />
           </a>
-          <a href="https://www.instagram.com/refierexperts/">
-            <i className="fab fa-instagram fa-2x fa-fw" />
+          <a href="https://www.instagram.com//">
+            <i className="fab fa-instagram fa-3x fa-fw" />
           </a>
         </div>
         <p>Copyrights © 2021 All Rights Reserved by Brijesh Burfal</p>
