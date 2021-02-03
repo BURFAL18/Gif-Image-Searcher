@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+/* ================Navbar css================================== */
+.navbar {
+ padding: 0%;
+}
+.navbar-brand {
+  font-size: 2.4rem !important;
+  color: #ffda0b !important;
+}
+.menu_active {
+  font-weight: bold;
+  border-bottom: 1px solid #f8e115;
+}
+.navbar a:hover {
+  color: #00c2fdf8 !important;
+}
+.navbar a {
+  color: #187ceeb6 !important;
+}
+.nav-item {
+  font-size: large;
+}
+
+/* -------footer---------------- */
+
+footer * {
+  padding: 10px;
+  margin: 0;
+
+  color: rgb(108, 121, 233);
+}
+
+/* ---------------------------footer icon ---- */
+.fab {
+  transform: scale(0.92);
+  transition: transform 0.3s ease;
+}
+
+.fab:hover {
+  transform: scale(1.3);
+}
+
+.jumbotron {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  margin-bottom: 0;
+  background-color: #fff;
+}
+@media (min-width: 800px) {
+  .jumbotron {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron h1 {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: 0.25rem;
+}

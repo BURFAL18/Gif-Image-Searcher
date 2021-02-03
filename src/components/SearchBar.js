@@ -15,15 +15,16 @@ class SearchBar extends React.Component {
   render() {
     return (
       <div className="d-flex container mt-4">
-        <form className="input-group" onSubmit={this.onFormSubmit}>
+        <form class="input-group" onSubmit={this.onFormSubmit}>
           <input
             type="text"
-            className="form-control"
             placeholder="Type something.."
             value={this.state.term}
             onChange={(e) => {
               this.setState({ term: e.target.value });
             }}
+            class="form-control mr-lg-2"
+            aria-label="Search"
           />
           <div class="btn-group">
             <button
@@ -33,8 +34,9 @@ class SearchBar extends React.Component {
               aria-haspopup="true"
               aria-expanded="false"
             >
-              Type
+              {this.state.searchType}
             </button>
+
             <div class="dropdown-menu">
               <a
                 class={`dropdown-item ${
@@ -57,6 +59,7 @@ class SearchBar extends React.Component {
               </a>
             </div>
           </div>
+
           <button className="btn btn-primary">
             <i className="fa fa-search" aria-hidden="true"></i>
           </button>
